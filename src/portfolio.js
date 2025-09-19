@@ -20,22 +20,22 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Jacob Nef",
-  title: "Hey, I'm Jacob!",
+  username: "Tony Phasay",
+  title: "Hello world, I am Tony!",
   subTitle: emoji(
-    "I'm a Computer Science student at Brigham Young University with an emphasis in Software Engineering. I currently work as a Web Developer at BYU, writing unit tests, developing websites, and leading teams to deliver high-quality software solutions."
+    "I'm a Computer Science student at Brigham Young University with an emphasis in Software Engineering. I currently work as a DevOps Technician at FPS GOLD, managing over 200+ servers, implementing CI/CD pipelines, troubleshooting production issues, and deploying hotfixes."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button. this link doesn't need to be replaced to get your resume in the site. Follow the README instructions for that.
+    "https://docs.google.com/document/d/152qmYANTWKW-iF0iFVJ6Srmrm1ZA3lb-GmmWYU7_Bvk/edit?usp=sharing", // Set to empty to hide the button. this link doesn't need to be replaced to get your resume in the site. Follow the README instructions for that.
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/jakenef",
-  linkedin: "https://www.linkedin.com/in/jacob-nef/",
-  gmail: "saadpasta70@gmail.com",
+  github: "https://github.com/anthonyphasay",
+  linkedin: "https://www.linkedin.com/in/anthony-phasay/",
+  gmail: "tonyphasay45@gmail.com",
   //gitlab: "https://gitlab.com/saadpasta",
   //facebook: "https://www.facebook.com/saad.pasta7",
   //medium: "https://medium.com/@saadpasta",
@@ -131,23 +131,24 @@ const educationInfo = {
       logoPosition: "center", // Optional: center, top, bottom, left, right, or specific like "center top"
       logoScale: 1.2, // Optional: zoom factor for logo within the FIXED circle (e.g., 0.8 = zoomed out, 1.5 = zoomed in, circle size never changes)
       subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2021 - April 2027",
-      desc: "2x Dean's List Recipient (Top 5% of class)",
-      descBullets: [
-        "President of BYU Developer's Club",
-        "Researched ... "
-      ]
+      duration: "September 2023 - April 2028",
+      // desc: "2x Dean's List Recipient (Top 5% of class)",
+      // Add something impressive here
+      // descBullets: [
+      //   "President of BYU Developer's Club",
+      //   "Researched ... "
+      // ]
     },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      logoPosition: "center",
-      logoScale: 1,
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
+    // {
+    //   schoolName: "Stanford University",
+    //   logo: require("./assets/images/stanfordLogo.png"),
+    //   logoPosition: "center",
+    //   logoScale: 1,
+    //   subHeader: "Bachelor of Science in Computer Science",
+    //   duration: "September 2013 - April 2017",
+    //   desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+    //   descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+    // }
   ]
 };
 
@@ -173,26 +174,40 @@ const techStack = {
 };
 
 // Work experience section
-
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
+const customWorkExperience ={
+  display: true,
+  experience: [{
+      role: "Core DevOps Technician",
+      company: "FPS GOLD",
+      companylogo: require("./assets/images/fpsgold.jpeg"),
+      date: "May 2024 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
-    },
+    }]
+}
+
+const workExperiences = {
+  display: true, //Set it to true to show workExperiences Section
+  experience: [
+    // {
+    //   role: "Core DevOps Technician",
+    //   company: "FPS GOLD",
+    //   companylogo: require("./assets/images/fpsgold.jpeg"),
+    //   date: "June 2018 – Present",
+    //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    //   descBullets: [
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    //   ]
+    // },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
+      role: "System Operator",
+      company: "DHI Computing Services, Inc",
+      companylogo: require("./assets/images/dhi.jpeg"),
+      date: "Feb 2020 – Jan 2023",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
@@ -397,6 +412,7 @@ export {
   skillsSection,
   educationInfo,
   techStack,
+  customWorkExperience,
   workExperiences,
   bigProjects,
   openSource,

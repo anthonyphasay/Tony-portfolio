@@ -1,17 +1,17 @@
 import React, {useState, createRef} from "react";
-import "./ExperienceCard.scss";
+import "./ExperienceCard2.scss";
 import ColorThief from "colorthief";
 
 // uses colorthief library
 
-export default function ExperienceCard({cardInfo, isDark}) {
+export default function ExperienceCard2({cardInfo, isDark}) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
   // this function will get RGB of image, then display it as background
   function getColorArrays() {
     const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
+    // setColorArrays(colorThief.getColor(imgRef.current));
   }
 
   function rgb(values) {
@@ -35,7 +35,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
 // <div style={{background: rgb(colorArrays)}} className="experience-banner">
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
+      <div style={{background: rgb(colorArrays)}} className="fpsgold">
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>
@@ -47,7 +47,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
           className="experience-roundedimg"
           src={cardInfo.companylogo}
           alt={cardInfo.company}
-          onLoad={() => getColorArrays()}
+          // onLoad={() => getColorArrays()}
         />
       </div>
       <div className="experience-text-details">
