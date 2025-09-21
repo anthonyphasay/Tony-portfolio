@@ -23,7 +23,7 @@ const greeting = {
   username: "Tony Phasay",
   title: "Hello world, I am Tony!",
   subTitle: emoji(
-    "I'm a Computer Science student at Brigham Young University with an emphasis in Software Engineering. I currently work as a DevOps Technician at FPS GOLD, managing over 200+ servers, implementing CI/CD pipelines, troubleshooting production issues, and deploying hotfixes."
+    "I'm a Computer Science student at Brigham Young University with an emphasis in Software Engineering. I currently work as a DevOps Technician at FPS GOLD, managing over 100+ servers, implementing CI/CD pipelines, troubleshooting production issues, and deploying hotfixes."
   ),
   resumeLink:
     "https://docs.google.com/document/d/152qmYANTWKW-iF0iFVJ6Srmrm1ZA3lb-GmmWYU7_Bvk/edit?usp=sharing", // Set to empty to hide the button. this link doesn't need to be replaced to get your resume in the site. Follow the README instructions for that.
@@ -210,13 +210,6 @@ const workExperiences = {
       date: "Feb 2020 – Jan 2023",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
   ]
 };
 
